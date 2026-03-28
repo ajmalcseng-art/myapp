@@ -17,6 +17,13 @@ pipeline {
                     url: 'https://github.com/ajmalcseng-art/myapp'
             }
         }
+	 stage('Test') {
+            steps {
+                sh 'npm install'
+                sh 'npm test'
+            }
+        }
+        
         
         stage('Build Docker Image') {
             steps {
