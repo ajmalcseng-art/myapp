@@ -4,7 +4,7 @@ pipeline {
     environment {
         AWS_REGION = 'ap-south-1'
         ECR_REPO = '376903139062.dkr.ecr.ap-south-1.amazonaws.com/myapp'
-        ECS_CLUSTER = 'myapp-cluster'
+        ECS_CLUSTER = 'myapp-clusterr'
         ECS_SERVICE = 'myapp-service'
         IMAGE_TAG = "${BUILD_NUMBER}"
     }
